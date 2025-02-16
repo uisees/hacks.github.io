@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UISEES - Хакинг</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Courier New', monospace;
+            background-color: #121212;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100%;
+            padding: 0;
+            scroll-behavior: smooth;
+            overflow-y: scroll;
+            padding-top: 50px;
+        }
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #909990;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background-color: #333;
+            border-radius: 10px;
+        }
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+            padding: 30px;
+            min-height: 150vh;
+        }
+        .heading {
+            font-size: 40px;
+            font-weight: bold;
+            background: linear-gradient(45deg, #ffffff, #000000);
+            -webkit-background-clip: text;
+            color: transparent;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            animation: fadeIn 3s ease-out;
+        }
+        .section {
+            margin: 50px 0;
+        }
+        .description {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+            padding: 20px;
+            border: 2px solid rgba(123, 129, 123, 0.5);
+            border-radius: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 4px 10px rgba(102, 104, 102, 0.5);
+        }
+        .description.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .button {
+            padding: 15px 40px;
+            font-size: 18px;
+            color: #000;
+            background: #828582;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+            border: 2px solid rgba(129, 136, 129, 0.5);
+            margin-top: 270px; /* Подняли кнопку на 3 см выше */
+        }
+        .button:hover {
+            transform: scale(1.1) rotate(5deg);
+            background-color: #000000;
+            color: #9ec5cf;
+            box-shadow: 0 4px 20px rgba(177, 179, 177, 0.7);
+        }
+        .animated-images {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .animated-images img {
+            width: 250px;
+            height: 250px;
+            border-radius: 15px;
+            animation: float 3s ease-in-out infinite alternate;
+            border: 2px solid rgba(238, 238, 238, 0.5);
+        }
+        .animated-images img:nth-child(2) {
+            animation-delay: 1s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .additional-info {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-top: 40px;
+            padding: 30px;
+            background-color: #1f1f1f;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(110, 112, 110, 0.3);
+            text-align: left;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s ease-out, transform 1s ease-out;
+        }
+        .additional-info.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Courier+New&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <div class="heading">UISEES - Хакинг в мире технологий</div>
+
+        <div class="section animated-images">
+            <img src="https://media.giphy.com/media/QpVUMRUJGokfqXyfa1/giphy.gif" alt="Hacker GIF 1">
+            <img src="https://media.giphy.com/media/3oEjI6SIIIyqa6Pp2w/giphy.gif" alt="Hacker GIF 2">
+        </div>
+
+        <div class="description visible">
+            Добро пожаловать в мир хакинга и технологий! Узнайте, как улучшить свои навыки и стать мастером IT.
+        </div>
+
+        <div class="additional-info">
+            <h2>Почему стоит заниматься хакингом?</h2>
+            <p>
+                Хакинг — это не просто умение взламывать системы. Это искусство, которое открывает перед вами новые горизонты в мире информационных технологий. Здесь вы научитесь:
+            </p>
+            <ul>
+                <li>Разрабатывать безопасные приложения и сайты</li>
+                <li>Понимать, как работают системы защиты и защиты данных</li>
+                <li>Работать с передовыми инструментами и технологиями безопасности</li>
+                <li>Получать ценные знания, которые всегда востребованы на рынке труда</li>
+            </ul>
+            <p>
+                На моем канале в Telegram мы обсуждаем все важные новости, делимся полезными советами и обучающими материалами.
+            </p>
+        </div>
+
+        <div class="additional-info">
+            <h2>Что вы получите, присоединившись?</h2>
+            <p>
+                Присоединившись к нашему каналу, вы получите:
+            </p>
+            <ul>
+                <li>Доступ к эксклюзивным урокам по безопасности и хакингу</li>
+                <li>Советы от профессионалов отрасли</li>
+            </ul>
+            <p>
+                Станьте частью растущего сообщества хакеров и разработчиков, которые делают мир безопаснее!
+            </p>
+        </div>
+    </div>
+
+    <!-- Кнопка перенесена немного выше -->
+    <a href="https://t.me/uisees" class="button">Перейти ко мне в Telegram</a>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            setTimeout(function() {
+                document.querySelector(".description").classList.add("visible");
+            }, 500);
+
+            setTimeout(function() {
+                document.querySelector(".additional-info").classList.add("visible");
+            }, 1000);
+
+            setTimeout(function() {
+                document.querySelectorAll(".additional-info")[1].classList.add("visible");
+            }, 2000);
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
